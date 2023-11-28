@@ -24,6 +24,7 @@ file(GLOB_RECURSE GLOBAL_FILE
 if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
     # Debug Configure
     add_definitions(-DDEBUG)
+    add_definitions(-DENABLE_DEBUG_LOG)
     set(DEBUG_INCLUDE_DIR)
     set(DEBUG_LINK_DIR )
     set(DEBUG_LIB)

@@ -75,8 +75,8 @@ inline void DebugLogErrorFunc(const char* file, int line, const char* fmt, Args&
 
 
 #ifdef ENABLE_DEBUG_LOG
-	#define DEBUG_LOG(...) Aether::DebugLogFunc(__FILE__,__LINE__,__VA_ARGS__)
-	#define DEBUG_LOG_ERROR(...) Aether::DebugLogErrorFunc(__FILE__,__LINE__,__VA_ARGS__)
+	#define DEBUG_LOG(...) DebugLogFunc(__FILE__,__LINE__,__VA_ARGS__)
+	#define DEBUG_LOG_ERROR(...) DebugLogErrorFunc(__FILE__,__LINE__,__VA_ARGS__)
 #else
 	#define DEBUG_LOG(...) ((void)0)
 	#define DEBUG_LOG_ERROR(...) ((void)0)
