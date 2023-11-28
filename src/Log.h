@@ -7,7 +7,7 @@ extern const char* GetLogName();
 class Log
 {
 public:
-	~Log();
+	~Log() {}
 	static Log& Get()
 	{
 		static Log log;

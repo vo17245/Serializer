@@ -1,0 +1,1 @@
+const char* GetLogName(){return "Serializer";}
